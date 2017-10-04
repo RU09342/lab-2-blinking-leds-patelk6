@@ -8,7 +8,7 @@ Implemented on the following processors:
 
 ##Overall structure of code
 The following image gives an idea of how the code is structured on each development Board
-![alt text](https://imgur.com/a/IAKVG "High-Level Overview of how the code is structured")
+![alt text](https://i.imgur.com/QpQ45Cc.png "High-Level Overview of how the code is structured")
 
 1. Stop WatchDog Timer
 2. Initialise Registers
