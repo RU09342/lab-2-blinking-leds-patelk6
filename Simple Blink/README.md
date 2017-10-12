@@ -30,3 +30,11 @@ The main differences lie in the specific processor dependent implementations. Ea
 registers, which would need to be changed based on the specific processor used. For example, Pin 1.0 is the red LED on the MSP430G2553,
 while the same pin on the MSP430F5529 is not even accessible.
 
+### Key differences
+We have 5 different implementations of the same code, for 5 different processors. The code for all 5 is nearly identical,
+and for some processors, is even 100% identical. However, one important aspect to understand is that the 2311, 5994, and 
+6989 processors all require an additional piece of code in order to function, else nothing will happen. For these boards,
+we need to disable the pin high-impedance mode, which is enabled by default in these boards. This high-impedance mode
+essentially forces all registers regarding pins to be set to their default values, and blocks the ability to change the pins.
+As a result, we need to run the line, PM5CTL0 &= ~LOCKLPM5 in order to actually implement our code.
+
