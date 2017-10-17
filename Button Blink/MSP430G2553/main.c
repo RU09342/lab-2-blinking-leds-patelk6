@@ -20,7 +20,7 @@ int main(void)
 
         P1OUT &= ~BIT0;          // Disale RED LED
     }
-    P1OUT |= BIT0;
+    P1OUT |= BIT0;				//Force Red LED on
 
 
   }
