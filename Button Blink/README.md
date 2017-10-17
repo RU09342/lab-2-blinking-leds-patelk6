@@ -52,7 +52,7 @@ There are two key differences in accessing buttons that we must look at:
 
 In order to understand why we need to do both of these things, we can look at the image below:
 
-![alt text](pull_up.jpg "Circuit Diagram detailing why we need a pull-up resistor")
+![alt text](https://github.com/RU09342/lab-2-blinking-leds-patelk6/blob/master/Button%20Blink/pull_up.jpg "Circuit Diagram detailing why we need a pull-up resistor")
 
 The button is naturally high, as can be seen in the preceeding image. When the switch is open, the voltage on the pin
 is Vcc. But when the button is pressed (switch is closed) the voltage on the pin essentially becomes 0, as all of the current will
